@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Rvt-2e-9zc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - Reachability-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="JTSViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnD-Iu-zSH">
+                                <rect key="frame" x="135" y="72" width="50" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="X1r-Zo-WAC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="6gW-zy-4mc">
+                                <rect key="frame" x="45" y="169" width="230" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="github.com/jaredsinclair/JTSReachability" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2t-Mt-1Xo">
+                                <rect key="frame" x="46" y="533" width="228" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686280727386475" green="0.82745105028152466" blue="0.73333334922790527" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="6gW-zy-4mc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rnD-Iu-zSH" secondAttribute="bottom" constant="20" id="18c-Ag-yz0"/>
+                            <constraint firstItem="rnD-Iu-zSH" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" symbolic="YES" id="67Y-QX-EKS"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="z2t-Mt-1Xo" secondAttribute="bottom" constant="20" id="8OA-Fe-0iW"/>
+                            <constraint firstAttribute="centerY" secondItem="6gW-zy-4mc" secondAttribute="centerY" id="D0I-ce-psi"/>
+                            <constraint firstAttribute="centerX" secondItem="z2t-Mt-1Xo" secondAttribute="centerX" id="Ef0-TZ-mLd"/>
+                            <constraint firstAttribute="centerX" secondItem="rnD-Iu-zSH" secondAttribute="centerX" id="GmI-of-mtE"/>
+                            <constraint firstItem="6gW-zy-4mc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Xbd-0g-qNn"/>
+                            <constraint firstAttribute="centerX" secondItem="6gW-zy-4mc" secondAttribute="centerX" id="fMa-Sm-yiT"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6gW-zy-4mc" secondAttribute="trailing" constant="20" id="qg5-hC-uE7"/>
+                            <constraint firstItem="z2t-Mt-1Xo" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6gW-zy-4mc" secondAttribute="bottom" constant="20" id="xf2-qV-R5j"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Reachability" id="hNj-JD-QzH"/>
+                    <connections>
+                        <outlet property="statusLabel" destination="rnD-Iu-zSH" id="khf-gt-m0b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="660" y="109"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5k8-P2-fn0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rvt-2e-9zc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="31W-Uv-uvD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.16862745583057404" green="0.69411766529083252" blue="0.11764706671237946" alpha="1" colorSpace="deviceRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="fSh-ce-auX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Fy-TR-0Cv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="229" y="109"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Avatar" width="230" height="230"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
